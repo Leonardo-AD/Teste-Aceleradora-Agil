@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.min.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="./assets/icon.png">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" type="module"></script>
+
+    <title>Lista de Tarefas</title>
+</head>
+<body>
+    <main>
+        
+        <section class="sidebar-container">
+            <div class="sidebar-container-profile_info">
+                <span id="close-menu" class="material-symbols-outlined">close</span>
+                <div id="image">
+                    <img src="" onError="this.onerror=null;this.src='./assets/perfil-de-usuario.png';" id="profile-image" alt="foto do perfil do usuário">
+                </div>
+                
+                <h2 id="user-name">Seu nome</h2>
+                
+                <p> 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Eos placeat nam minima, autem a corrupti quos accusantium reiciendis, 
+                    quisquam iure ullam necessitatibus commodi nobis, maiores fugiat doloremque 
+                    repellendus optio ipsam.
+                </p>
+            </div>
+
+            <div class="sidebar-container-links">
+                <ul class="list">
+                    <li><span class="material-symbols-outlined">done</span> <a href="#">Concluídas</a></li>
+                    <li><span class="material-symbols-outlined">archive</span> <a href="#">Arquivadas</a></li>
+                    <li><span class="material-symbols-outlined">delete</span> <a href="#">Lixeira</a></li>
+                    <li><span class="material-symbols-outlined">dark_mode</span> <a href="#">Tema</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="main-container">
+            <h1>Lista de tarefas</h1>
+
+            <div class="main-container-adding_task">
+                <input type="text" placeholder="Digite uma tarefa" name="task-input" id="task-input">
+                
+                <select name="time" id="task-time">
+                    <option value="day">Dia</option>
+                    <option value="night">Noite</option>
+                </select>
+
+                <button id="add-task-button" class="material-symbols-outlined">add</button>
+            </div>
+            
+            <div class="main-container-list">
+                <div id="day-list-items">
+                    <h2>Dia</h2>
+                    
+                    <ol id="day-list">
+                        
+                    </ol>
+                </div>
+
+                <div id="night-list-items">
+                    <h2>Noite</h2>
+                    
+                    <ol id="night-list">
+                        
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>
